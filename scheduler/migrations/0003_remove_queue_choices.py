@@ -14,11 +14,11 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='repeatablejob',
             name='queue',
-            field=models.CharField(max_length=16, verbose_name='queue'),
+            field=models.CharField(max_length=32, verbose_name='queue'),
         ),
         migrations.AlterField(
             model_name='scheduledjob',
             name='queue',
-            field=models.CharField(max_length=16, verbose_name='queue'),
+            field=models.CharField(max_length=32, verbose_name='queue'),
         ),
     ]
