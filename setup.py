@@ -32,7 +32,7 @@ tests_require = [
 
 
 setup(
-    name='dk-django-rq-scheduler',
+    name='django-rq-scheduler',
     version=get_version(PATH_OF_RUNNING_SCRIPT),
     description='A database backed job scheduler for Django RQ',
     long_description=long_description,
