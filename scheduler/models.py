@@ -19,7 +19,7 @@ class BaseJob(TimeStampedModel):
     name = models.CharField(_('name'), max_length=128, unique=True)
     callable = models.CharField(_('callable'), max_length=2048)
     enabled = models.BooleanField(_('enabled'), default=True)
-    queue = models.CharField(_('queue'), max_length=16)
+    queue = models.CharField(_('queue'), max_length=32)
     job_id = models.CharField(
         _('job id'), max_length=128, editable=False, blank=True, null=True)
     timeout = models.IntegerField(
