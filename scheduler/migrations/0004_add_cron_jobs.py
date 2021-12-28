@@ -23,7 +23,7 @@ class Migration(migrations.Migration):
                 ('name', models.CharField(max_length=128, unique=True, verbose_name='name')),
                 ('callable', models.CharField(max_length=2048, verbose_name='callable')),
                 ('enabled', models.BooleanField(default=True, verbose_name='enabled')),
-                ('queue', models.CharField(max_length=16, verbose_name='queue')),
+                ('queue', models.CharField(max_length=32, verbose_name='queue')),
                 ('job_id', models.CharField(blank=True, editable=False, max_length=128, null=True, verbose_name='job id')),
                 ('timeout', models.IntegerField(blank=True, help_text="Timeout specifies the maximum runtime, in seconds, for the job before it'll be considered 'lost'. Blank uses the default timeout.", null=True, verbose_name='timeout')),
                 ('repeat', models.PositiveIntegerField(blank=True, null=True, verbose_name='repeat')),
